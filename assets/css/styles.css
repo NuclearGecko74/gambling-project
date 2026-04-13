@@ -67,13 +67,18 @@ nav a.active { color: var(--accent-green); }
 
 /* ── Page banner (inner pages) ── */
 .page-banner {
-    background: var(--bg-panel);
-    border-bottom: 1px solid var(--border);
+    display: block;
+    width: 100%;
+    background-color: #0f212e;
+    background-color: var(--bg-panel);
+    border-bottom: 2px solid #2f4553;
+    border-bottom-color: var(--border);
     padding: 48px 5%;
     text-align: center;
+    box-sizing: border-box;
 }
-.page-banner h1 { font-size: 2.4rem; font-weight: 800; }
-.page-banner p  { color: var(--text-muted); margin-top: 6px; }
+.page-banner h1 { font-size: 2.4rem; font-weight: 800; color: #ffffff; color: var(--text-main); }
+.page-banner p  { color: #b1bad3; color: var(--text-muted); margin-top: 6px; }
 
 /* ── Hero (index) ── */
 .hero {
@@ -182,17 +187,24 @@ nav a.active { color: var(--accent-green); }
 /* ── Game section ── */
 .game-section {
     padding: 60px 0;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr 320px;
     gap: 30px;
     align-items: start;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .game-wrapper {
-    background: var(--bg-panel);
+    min-width: 0;       /* evita overflow en grid */
+    background-color: #0f212e;
+    background-color: var(--bg-panel);
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid var(--border);
+    border: 1px solid #2f4553;
+    border-color: var(--border);
+    box-sizing: border-box;
 }
 
 .game-header {
@@ -267,12 +279,16 @@ nav a.active { color: var(--accent-green); }
 
 /* ── Symbols guide ── */
 .symbols-guide {
-    background: var(--bg-panel);
+    min-width: 0;       /* evita overflow en grid */
+    background-color: #0f212e;
+    background-color: var(--bg-panel);
     padding: 28px;
     border-radius: 20px;
-    border: 1px solid var(--border);
+    border: 1px solid #2f4553;
+    border-color: var(--border);
+    box-sizing: border-box;
 }
-.symbols-guide h3 { font-size: 1rem; font-weight: 800; margin-bottom: 16px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+.symbols-guide h3 { font-size: 1rem; font-weight: 800; margin-bottom: 16px; color: #b1bad3; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
 
 .symbols-grid { display: flex; flex-direction: column; gap: 10px; }
 .symbol-row {
@@ -293,13 +309,19 @@ nav a.active { color: var(--accent-green); }
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: start;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .contact-form {
-    background: var(--bg-panel);
+    min-width: 0;
+    background-color: #0f212e;
+    background-color: var(--bg-panel);
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid var(--border);
+    border: 1px solid #2f4553;
+    border-color: var(--border);
+    box-sizing: border-box;
 }
 .contact-form h2 { font-size: 1.5rem; margin-bottom: 6px; }
 .form-subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 28px; }
@@ -333,10 +355,14 @@ nav a.active { color: var(--accent-green); }
 
 /* ── FAQ ── */
 .faq {
-    background: var(--bg-panel);
+    min-width: 0;
+    background-color: #0f212e;
+    background-color: var(--bg-panel);
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid var(--border);
+    border: 1px solid #2f4553;
+    border-color: var(--border);
+    box-sizing: border-box;
 }
 .faq h2 { font-size: 1.5rem; margin-bottom: 24px; }
 .faq-list { display: flex; flex-direction: column; gap: 10px; }

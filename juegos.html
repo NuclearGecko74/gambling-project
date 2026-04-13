@@ -19,9 +19,15 @@
         </nav>
     </header>
 
+    <!-- Banner: sesión anterior restaurada desde LocalStorage -->
+    <div id="session-banner" class="session-banner" style="display:none">
+        <span id="session-msg"></span>
+        <button id="session-dismiss" class="banner-dismiss" aria-label="Cerrar">✕</button>
+    </div>
+
     <div class="page-banner">
         <h1>Juegos</h1>
-        <p>Prueba tu suerte en nuestro tragamonedas</p>
+        <p>Prueba tu suerte — usa <kbd>Espacio</kbd> para girar</p>
     </div>
 
     <main>
@@ -41,11 +47,11 @@
                     <div class="reel" id="reel3">💎</div>
                 </div>
 
-                <p id="game-status" class="game-status">¡Haz clic en girar! — Apuesta: 10 créditos</p>
+                <p id="game-status" class="game-status"></p>
 
                 <div class="game-controls">
-                    <button class="btn-main" id="spin-btn" onclick="playGame()">Girar</button>
-                    <button class="btn-outline" id="reset-btn" onclick="resetGame()">Reiniciar</button>
+                    <button class="btn-main" id="spin-btn">Girar</button>
+                    <button class="btn-outline" id="reset-btn">Reiniciar</button>
                 </div>
 
                 <div class="game-stats">
@@ -60,16 +66,10 @@
                 </div>
             </div>
 
+            <!-- Tabla de premios: renderizada dinámicamente desde games.json -->
             <div class="symbols-guide">
                 <h3>Tabla de premios</h3>
-                <div class="symbols-grid">
-                    <div class="symbol-row"><span>7️⃣ 7️⃣ 7️⃣</span><span class="prize">+150 créditos</span></div>
-                    <div class="symbol-row"><span>💎 💎 💎</span><span class="prize">+100 créditos</span></div>
-                    <div class="symbol-row"><span>🍀 🍀 🍀</span><span class="prize">+80 créditos</span></div>
-                    <div class="symbol-row"><span>🔔 🔔 🔔</span><span class="prize">+60 créditos</span></div>
-                    <div class="symbol-row"><span>🍋 🍋 🍋</span><span class="prize">+40 créditos</span></div>
-                    <div class="symbol-row"><span>🍒 🍒 🍒</span><span class="prize">+30 créditos</span></div>
-                </div>
+                <div class="symbols-grid" id="symbols-grid"></div>
             </div>
         </section>
     </main>

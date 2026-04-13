@@ -1,0 +1,16 @@
+{
+  "config": {
+    "initialCredits": 100,
+    "betAmount": 10,
+    "spinTicks": 15,
+    "tickInterval": 80
+  },
+  "symbols": [
+    { "icon": "7️⃣", "prize": 150, "name": "Siete" },
+    { "icon": "💎", "prize": 100, "name": "Diamante" },
+    { "icon": "🍀", "prize":  80, "name": "Trébol" },
+    { "icon": "🔔", "prize":  60, "name": "Campana" },
+    { "icon": "🍋", "prize":  40, "name": "Limón" },
+    { "icon": "🍒", "prize":  30, "name": "Cereza" }
+  ]
+}

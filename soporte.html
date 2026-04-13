@@ -29,7 +29,13 @@
             <div class="contact-form">
                 <h2>Envíanos un mensaje</h2>
                 <p class="form-subtitle">Responderemos a la brevedad posible.</p>
-                <form onsubmit="handleContact(event)">
+
+                <!-- Indicador de borrador guardado en LocalStorage -->
+                <div id="draft-indicator" class="draft-indicator" style="display:none">
+                    <span>📝 Borrador guardado automáticamente</span>
+                </div>
+
+                <form id="contact-form">
                     <div class="input-group">
                         <label for="username">Usuario</label>
                         <input type="text" id="username" placeholder="Tu nombre de usuario" required>
@@ -63,6 +69,10 @@
                     <details class="faq-item">
                         <summary>¿Cómo funciona el tragamonedas?</summary>
                         <p>Cada tirada cuesta 10 créditos. Si los tres carretes muestran el mismo símbolo, ganas según la tabla de premios.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Mi progreso se guarda?</summary>
+                        <p>Sí. Tus créditos y estadísticas se guardan automáticamente en tu navegador mediante LocalStorage, por lo que persisten entre visitas.</p>
                     </details>
                     <details class="faq-item">
                         <summary>¿Hay dinero real involucrado?</summary>

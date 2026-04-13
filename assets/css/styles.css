@@ -377,6 +377,84 @@ footer {
     margin-top: auto;
 }
 
+/* ── Animaciones ── */
+@keyframes reel-blur {
+    0%, 100% { filter: blur(0px);   opacity: 1; }
+    50%       { filter: blur(3px);  opacity: 0.7; }
+}
+
+@keyframes pulse-win {
+    0%, 100% { box-shadow: 0 0 10px rgba(0,231,1,0.3); }
+    50%       { box-shadow: 0 0 28px rgba(0,231,1,0.8); }
+}
+
+@keyframes flash-credit {
+    0%   { color: var(--accent-green); transform: scale(1); }
+    40%  { color: #fff;                transform: scale(1.3); }
+    100% { color: var(--accent-green); transform: scale(1); }
+}
+
+@keyframes slide-down {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.reel.spinning { animation: reel-blur 0.15s infinite; }
+.reel.winning  { animation: pulse-win 0.9s ease-in-out infinite; border-color: var(--accent-green); }
+.credits-value.flash { animation: flash-credit 0.45s ease-out; }
+
+/* ── Session banner (LocalStorage) ── */
+.session-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1b3a2a;
+    border-bottom: 1px solid #2a5c3a;
+    padding: 12px 5%;
+    font-size: 0.88rem;
+    color: var(--accent-green);
+    animation: slide-down 0.3s ease;
+    gap: 12px;
+}
+.banner-dismiss {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 1rem;
+    flex-shrink: 0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: color 0.2s;
+}
+.banner-dismiss:hover { color: var(--text-main); }
+
+/* ── Draft indicator (LocalStorage) ── */
+.draft-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1b2e3a;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    animation: slide-down 0.3s ease;
+}
+
+/* ── kbd (atajo de teclado) ── */
+kbd {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-family: inherit;
+    font-size: 0.8em;
+    color: var(--text-muted);
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
     .game-section,

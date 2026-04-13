@@ -3,81 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMBLINGGGGG | UAG Proyecto</title>
+    <title>GAMBLINGGGGG | Inicio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
     <header>
-        <div class="logo"><span>🎲</span> GAMBLINGGGGG</div>
+        <a href="index.html" class="logo"><span>🎲</span> GAMBLINGGGGG</a>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#juegos">Juegos</a></li>
-                <li><a href="#soporte">Soporte</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <div class="hero">
-                <h1>Apuesta con <span>Inteligencia</span></h1>
-                <p>Desarrollo Web - <b>Miguel Cortés</b> y <b>Anton Olguín</b></p>
-                <br>
-                <a href="#juegos" class="btn-main" style="text-decoration:none">Probar suerte</a>
+        <section class="hero">
+            <h1>Apuesta con <span>Inteligencia</span></h1>
+            <p class="hero-sub">Desarrollo Web — <b>Miguel Cortés</b> y <b>Anton Olguín</b></p>
+            <div class="hero-actions">
+                <a href="juegos.html" class="btn-main">Probar suerte</a>
+                <a href="soporte.html" class="btn-outline">Contacto</a>
             </div>
+        </section>
 
+        <section class="features-section">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
             <div class="features-grid">
                 <article class="feature-card">
+                    <div class="feature-icon">🏗️</div>
                     <h3>Arquitectura HTML5</h3>
-                    <p>Uso de etiquetas semánticas para una estructura profesional.</p>
+                    <p>Uso de etiquetas semánticas para una estructura profesional y accesible.</p>
                 </article>
                 <article class="feature-card">
+                    <div class="feature-icon">📐</div>
                     <h3>Layout Moderno</h3>
-                    <p>Uso de CSS Grid y Flexbox para diseño responsivo.</p>
+                    <p>CSS Grid y Flexbox para un diseño responsivo que se adapta a cualquier pantalla.</p>
                 </article>
                 <article class="feature-card">
-                    <h3>Interconectividad</h3>
-                    <p>Navegación fluida mediante anclajes y selectores de ID.</p>
+                    <div class="feature-icon">⚡</div>
+                    <h3>Multi-Página</h3>
+                    <p>Navegación fluida entre páginas independientes con experiencia consistente.</p>
                 </article>
             </div>
         </section>
 
-        <section id="juegos">
-            <div class="game-wrapper">
-                <h2>Tragamonedas Original</h2>
-                <div class="slot-display">
-                    <div class="reel" id="reel1">💎</div>
-                    <div class="reel" id="reel2">💎</div>
-                    <div class="reel" id="reel3">💎</div>
-                </div>
-                <p id="game-status">¡Haz clic en girar!</p>
-                <button class="btn-main" id="spin-btn" onclick="playGame()">Girar</button>
+        <section class="stats-section">
+            <div class="stat-card">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Símbolos únicos</span>
             </div>
-        </section>
-
-        <section id="soporte">
-            <div class="contact-form">
-                <h2>Contacto de Soporte</h2>
-                <form onsubmit="handleContact(event)">
-                    <div class="input-group">
-                        <label>Usuario</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="input-group">
-                        <label>Mensaje</label>
-                        <textarea rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-main" style="width: 100%;">Enviar</button>
-                    <p id="form-msg" class="success-hidden">¡Mensaje enviado!</p>
-                </form>
+            <div class="stat-card">
+                <span class="stat-number">100</span>
+                <span class="stat-label">Créditos iniciales</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">Diversión garantizada</span>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Miguel Cortés & Anton Olguín | Universidad Autónoma de Guadalajara</p>
+        <p>&copy; 2026 Miguel Cortés &amp; Anton Olguín | Universidad Autónoma de Guadalajara</p>
     </footer>
 
     <script src="assets/js/script.js"></script>

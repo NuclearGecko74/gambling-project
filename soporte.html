@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMBLINGGGGG | Soporte</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><span>🎲</span> GAMBLINGGGGG</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>Soporte</h1>
+        <p>Estamos aquí para ayudarte</p>
+    </div>
+
+    <main>
+        <section class="support-section">
+            <div class="contact-form">
+                <h2>Envíanos un mensaje</h2>
+                <p class="form-subtitle">Responderemos a la brevedad posible.</p>
+                <form onsubmit="handleContact(event)">
+                    <div class="input-group">
+                        <label for="username">Usuario</label>
+                        <input type="text" id="username" placeholder="Tu nombre de usuario" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Asunto</label>
+                        <select id="subject" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="cuenta">Problema con mi cuenta</option>
+                            <option value="creditos">Problema con créditos</option>
+                            <option value="tecnico">Problema técnico</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="5" placeholder="Describe tu problema o consulta..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-main btn-full">Enviar mensaje</button>
+                    <p id="form-msg" class="success-hidden">✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.</p>
+                </form>
+            </div>
+
+            <div class="faq">
+                <h2>Preguntas frecuentes</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>¿Cómo obtengo más créditos?</summary>
+                        <p>Al reiniciar el juego recibes 100 créditos nuevamente. Es un juego de práctica sin dinero real.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Cómo funciona el tragamonedas?</summary>
+                        <p>Cada tirada cuesta 10 créditos. Si los tres carretes muestran el mismo símbolo, ganas según la tabla de premios.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Hay dinero real involucrado?</summary>
+                        <p>No. Este es un proyecto universitario de Desarrollo Web. Todos los créditos son virtuales y sin valor monetario.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Quiénes desarrollaron este sitio?</summary>
+                        <p>Miguel Cortés y Anton Olguín, estudiantes de la Universidad Autónoma de Guadalajara.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Miguel Cortés &amp; Anton Olguín | Universidad Autónoma de Guadalajara</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMBLINGGGGG | Juegos</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><span>🎲</span> GAMBLINGGGGG</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>Juegos</h1>
+        <p>Prueba tu suerte en nuestro tragamonedas</p>
+    </div>
+
+    <main>
+        <section class="game-section">
+            <div class="game-wrapper">
+                <div class="game-header">
+                    <h2>Tragamonedas</h2>
+                    <div class="credits-display">
+                        <span class="credits-label">Créditos</span>
+                        <span class="credits-value" id="credits">100</span>
+                    </div>
+                </div>
+
+                <div class="slot-display">
+                    <div class="reel" id="reel1">💎</div>
+                    <div class="reel" id="reel2">💎</div>
+                    <div class="reel" id="reel3">💎</div>
+                </div>
+
+                <p id="game-status" class="game-status">¡Haz clic en girar! — Apuesta: 10 créditos</p>
+
+                <div class="game-controls">
+                    <button class="btn-main" id="spin-btn" onclick="playGame()">Girar</button>
+                    <button class="btn-outline" id="reset-btn" onclick="resetGame()">Reiniciar</button>
+                </div>
+
+                <div class="game-stats">
+                    <div class="game-stat">
+                        <span id="wins-count">0</span>
+                        <span>Victorias</span>
+                    </div>
+                    <div class="game-stat">
+                        <span id="spins-count">0</span>
+                        <span>Tiradas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="symbols-guide">
+                <h3>Tabla de premios</h3>
+                <div class="symbols-grid">
+                    <div class="symbol-row"><span>7️⃣ 7️⃣ 7️⃣</span><span class="prize">+150 créditos</span></div>
+                    <div class="symbol-row"><span>💎 💎 💎</span><span class="prize">+100 créditos</span></div>
+                    <div class="symbol-row"><span>🍀 🍀 🍀</span><span class="prize">+80 créditos</span></div>
+                    <div class="symbol-row"><span>🔔 🔔 🔔</span><span class="prize">+60 créditos</span></div>
+                    <div class="symbol-row"><span>🍋 🍋 🍋</span><span class="prize">+40 créditos</span></div>
+                    <div class="symbol-row"><span>🍒 🍒 🍒</span><span class="prize">+30 créditos</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Miguel Cortés &amp; Anton Olguín | Universidad Autónoma de Guadalajara</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
